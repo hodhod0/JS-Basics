@@ -1,1 +1,2 @@
-console.log("hello world")
+var name = "name";
+alert("name")
