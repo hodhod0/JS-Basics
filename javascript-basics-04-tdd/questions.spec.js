@@ -106,8 +106,8 @@ describe('Numbers and math : ', () => {
 
   describe('absoluteValueArray', () => {
     it('Gets multiple absolute values', () => {
-      const result = absoluteValueArray([-5,-50,-25,-568])
-      expect(result).toEqual([5,50,25,568])
+      const result = absoluteValueArray([-5, -50, -25, -568])
+      expect(result).toEqual([5, 50, 25, 568])
     })
   })
 
@@ -134,16 +134,16 @@ describe('Numbers and math : ', () => {
 
 })
 
-describe("Arrays", () =>  {
+describe("Arrays", () => {
 
   it('Creates an array with "Html", "CSS", "Java", "PHP"', () => {
     const languages = createLanguagesArray()
-    expect(languages).toEqual(["Html","CSS","Java","PHP"])
+    expect(languages).toEqual(["Html", "CSS", "Java", "PHP"])
   })
 
   it('Creates a number array with numbers from 0 to 5', () => {
     const nombres = createNumbersArray()
-    expect(nombres).toEqual([0,1,2,3,4,5])
+    expect(nombres).toEqual([0, 1, 2, 3, 4, 5])
   })
 
   it('Replaces the 3rd element of the Array with "Javascript"', () => {
@@ -158,11 +158,11 @@ describe("Arrays", () =>  {
     const modifiedLanguages = addElement(replacedLanguages)
     expect(modifiedLanguages).toEqual(['Html', 'CSS', 'Javascript', 'PHP', 'Ruby', 'Python'])
   })
-  
+
   it('Adds "-2" and "-1" at the beginning of the numbers array', () => {
-    const numbers = [0,1,2,3,4,5]
+    const numbers = [0, 1, 2, 3, 4, 5]
     const modifiedNumbers = addNumberElement(numbers)
-    expect(modifiedNumbers).toEqual([-2,-1,0,1,2,3,4,5])
+    expect(modifiedNumbers).toEqual([-2, -1, 0, 1, 2, 3, 4, 5])
   })
 
   it('Removes the first element', () => {
@@ -180,7 +180,7 @@ describe("Arrays", () =>  {
   it('Converts a string into an array', () => {
     const socialNetworksString = 'Facebook,Twitter,Google +,Viadeo,LinkedIn'
     const socialNetworks = convertStrToArr(socialNetworksString)
-    expect(socialNetworks).toEqual(['Facebook','Twitter', 'Google +','Viadeo','LinkedIn'])
+    expect(socialNetworks).toEqual(['Facebook', 'Twitter', 'Google +', 'Viadeo', 'LinkedIn'])
   })
 
   it('Converts an array into a comma separated string', () => {
@@ -190,13 +190,13 @@ describe("Arrays", () =>  {
   })
 
   it('Sorts the array', () => {
-    const socialNetworks = ['Facebook','Twitter', 'Google +','Viadeo','LinkedIn']
+    const socialNetworks = ['Facebook', 'Twitter', 'Google +', 'Viadeo', 'LinkedIn']
     const socialNetworksSorted = sortArr(socialNetworks)
-    expect(socialNetworksSorted).toEqual(['Facebook','Google +','LinkedIn','Twitter','Viadeo'])
+    expect(socialNetworksSorted).toEqual(['Facebook', 'Google +', 'LinkedIn', 'Twitter', 'Viadeo'])
   })
 
   it('Inverts the array', () => {
-    const languages = ['CSS','Javascript','PHP','Ruby']
+    const languages = ['CSS', 'Javascript', 'PHP', 'Ruby']
     const languagesInverted = invertArr(languages)
     expect(languagesInverted).toEqual(["Ruby", "PHP", "Javascript", "CSS"])
   })
